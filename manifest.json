@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Auto History Cleaner",
+  "version": "1.0.0",
+  "description": "Automatically deletes Google searches and NSFW pages from your browsing history as soon as they are recorded.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "auto-history-cleaner@local",
+      "strict_min_version": "91.0"
+    }
+  },
+  "permissions": ["history", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_action": {
+    "default_title": "Auto History Cleaner",
+    "default_popup": "options.html"
+  }
+}
